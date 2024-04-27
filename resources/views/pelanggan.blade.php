@@ -11,11 +11,12 @@
 
     <title>SB Admin 2 - Tables</title>
 
-
+    
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
+    
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
@@ -28,10 +29,7 @@
 </head>
 
 <body id="page-top">
-<form action="{{url('tambah')}}" method="POST">
-@csrf
 
-</form>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -39,7 +37,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -79,18 +77,16 @@
                     </div>
                 </div>
             </li>
-
+            
             <!-- Divider -->
 
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
                 <a class="nav-link" href="transaksi">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-credit-card" viewBox="0 0 16 16">
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
-                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg>
                     <span>Pembayaraan</span></a>
             </li>
             <hr class="sidebar-divider">
@@ -107,7 +103,7 @@
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="login">Login</a>
                         <a class="collapse-item" href="register">Register</a>
-                    </div>
+                </div>
             </li>
 
 
@@ -187,8 +183,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to
-                                            download!</span>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -213,8 +208,7 @@
                                         Spending Alert: We've noticed unusually high spending for your account.
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All
-                                    Alerts</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
 
@@ -234,7 +228,8 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -245,7 +240,8 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -256,20 +252,20 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy
-                                            with
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
                                             the progress so far, keep up the good work!</div>
                                         <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle"
-                                            src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
@@ -278,8 +274,7 @@
                                         <div class="small text-gray-500">Chicken the Dog · 2w</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More
-                                    Messages</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
 
@@ -290,7 +285,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -308,8 +304,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal"
-                                    data-target="#logoutModal">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -324,109 +319,133 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- DataTales Example -->
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Pembayaraan</h1>
 
+                    <!-- DataTales Example -->
                     <body class="bg-body-secondary">
                         <div class="container">
                             <div class="card shadow mt-4">
                                 <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
                                     <h4 class="card-title">Data</h4>
-                                    <a href="{{ url('tambah') }}" class="btn btn-light">
+                                    <a href="{{url('tambah')}}" class="btn btn-light">
                                         <i class="bi bi-plus-circle-fill"></i> Tambah
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <form action="{{ url('tambah') }}" method="post"> @csrf <div class="mb-3 row">
-                                            <label for="id_barang" class="col-form-label col-2">ID Barang</label>
-                                            <div class="col-10"> <input type="number" class="form-control"
-                                                    name="produk_id"> </div>
-                                        </div>
-                                        <div class="mb-3 row"> <label for="nama_barang"
-                                                class="col-form-label col-2">Nama Barang</label>
-                                            <div class="col-10"> <input type="text" class="form-control"
-                                                    name="nama_produk"> </div>
-                                        </div>
-                                        <div class="mb-3 row"> <label for="telepon"
-                                                class="col-form-label col-2">Harga</label>
-                                            <div class="col-10"> <input type="number" class="form-control"
-                                                    name="harga"> </div>
-                                        </div>
-                                        <div class="mb-3 row"> <label for="harga"
-                                                class="col-form-label col-2">Stok</label>
-                                            <div class="col-10"> <input type="number" class="form-control"
-                                                    name="stok"> </div>
-                                        </div>
-                                        <div class="mb-3"> <button class="btn btn-success" type="reset"><i
-                                                    class="bi bi-x-square-fill"></i> Batal</button> <button
-                                                class="btn btn-primary" type="submit"> <i
-                                                    class="bi bi-save-fill"></i>&nbsp;Simpan </button> </div>
-                                    </form>
+                                    <table class="table table-sm table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th>ID Barang</th>
+                                            <th>Nama Barang</th>
+                                            <th>Jumlah</th>
+                                            <th>Jenis</th>
+                                            <th>Harga</th>
+                                            <th>Diskon</th>
+                                            <th>Edit</th>
+                                        </thead>
+                                        <thead>
+                                            <tr>
+                                                @foreach
+                                                <th>{{$item->id_barang}}</th>
+                                                <th>{{$item->nama_barang}}</th>
+                                                <th>{{$item->jenis_barang}}</th>
+                                                <th>{{$item->harga}}</th>
+                                                <th>{{$item->stok}}</th>
+                                                <th>{{$item->diskon}}</th>
+                                                <td>
+                                                    <a href="#" class="btn btn-success btn-sm">
+                                                        <i class="bi bi-pencil-square"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </thead>
+                                        <tbody>
+                                            {{-- @foreach ($data as $item)
+                                            <tr>
+                                                <td>{{$item->id}}</td>
+                                                <td>{{$item->nama}}</td>
+                                                <td>{{$item->alamat}}</td>
+                                                <td>{{$item->telepon}}</td>
+                                                <td>{{$item->username}}</td>
+                                                <td>{{$item->password}}</td>
+                                                <td>{{$item->akses}}</td>
+                                                
+                                                --}}
+                                            </tr>
+                                            {{-- @endforeach --}}
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </body>
-                    <!-- /.container-fluid -->
-
-                </div>
-                <!-- End of Main Content -->
-
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2020</span>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End of Footer -->
+                <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
 
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- End of Content Wrapper -->
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+    </div>
+    <!-- End of Page Wrapper -->
 
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
-                    </div>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
-        <!-- Page level plugins -->
-        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-        <!-- Page level custom scripts -->
-        <script src="js/demo/datatables-demo.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

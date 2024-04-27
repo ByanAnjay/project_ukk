@@ -82,11 +82,11 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
-                <a class="nav-link" href="tables">
+                <a class="nav-link" href="tambah">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                      </svg>
+                    </svg>
                     <span>Pembayaraan</span></a>
             </li>
             <hr class="sidebar-divider">
@@ -338,10 +338,8 @@
                                             <tr>
                                             <th>ID Barang</th>
                                             <th>Nama Barang</th>
-                                            <th>Jumlah</th>
-                                            <th>Jenis</th>
+                                            <th>Stok</th>
                                             <th>Harga</th>
-                                            <th>Diskon</th>
                                             <th>Edit</th>
                                         </thead>
                                         <thead>
@@ -349,11 +347,9 @@
                                                 <th>210000967401</th>
                                                 <th>Sprit</th>
                                                 <th>5</th>
-                                                <th>Minuman</th>
                                                 <th>8000</th>
-                                                <th>12%</th>
                                                 <td>
-                                                    <a href="#" class="btn btn-success btn-sm">
+                                                    <a href="" class="btn btn-success btn-sm">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </a>
                                                     <a href="#" class="btn btn-danger btn-sm">
@@ -363,19 +359,14 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                             {{-- @foreach ($data as $item)
+                                            {{-- @foreach ($data as $item)
                                             <tr>
-                                                <td>{{$item->id}}</td>
-                                                <td>{{$item->nama}}</td>
-                                                <td>{{$item->alamat}}</td>
-                                                <td>{{$item->telepon}}</td>
-                                                <td>{{$item->username}}</td>
-                                                <td>{{$item->password}}</td>
-                                                <td>{{$item->akses}}</td>
-                                                
-                                                --}}
+                                                <td>{{$item->produk_id}}</td>
+                                                <td>{{$item->nama_produk}}</td>
+                                                <td>{{$item->harga}}</td>
+                                                <td>{{$item->stok}}</td>
                                             </tr>
-                                            {{-- @endforeach --}}
+                                            @endforeach --}}
                                         </tbody>
                                     </table>
                                 </div>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Tables</title>
+    <title>SB Admin 2 - Edit</title>
 
 
     <!-- Custom fonts for this template -->
@@ -28,10 +28,7 @@
 </head>
 
 <body id="page-top">
-<form action="{{url('tambah')}}" method="POST">
-@csrf
 
-</form>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -39,11 +36,11 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Toko <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -330,32 +327,50 @@
                         <div class="container">
                             <div class="card shadow mt-4">
                                 <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
-                                    <h4 class="card-title">Data</h4>
-                                    <a href="{{ url('tambah') }}" class="btn btn-light">
+                                    <h4 class="card-title">Edit Transaksi</h4>
+                                    {{-- <a href="{{ url('tambah') }}" class="btn btn-light">
                                         <i class="bi bi-plus-circle-fill"></i> Tambah
-                                    </a>
+                                    </a> --}}
                                 </div>
                                 <div class="card-body">
                                     <form action="{{ url('tambah') }}" method="post"> @csrf <div class="mb-3 row">
                                             <label for="id_barang" class="col-form-label col-2">ID Barang</label>
                                             <div class="col-10"> <input type="number" class="form-control"
-                                                    name="produk_id"> </div>
+                                                    name="id_barang"> </div>
                                         </div>
                                         <div class="mb-3 row"> <label for="nama_barang"
                                                 class="col-form-label col-2">Nama Barang</label>
                                             <div class="col-10"> <input type="text" class="form-control"
-                                                    name="nama_produk"> </div>
+                                                    name="nama_barang"> </div>
                                         </div>
                                         <div class="mb-3 row"> <label for="telepon"
-                                                class="col-form-label col-2">Harga</label>
+                                                class="col-form-label col-2">Jumlah</label>
                                             <div class="col-10"> <input type="number" class="form-control"
-                                                    name="harga"> </div>
+                                                    name="telepon"> </div>
+                                        </div>
+                                        <div class="mb-3 row"> <label for="jenis_barang"
+                                                class="col-form-label col-2">Jenis Barang</label>
+                                            <div class="col-10"> <input type="text" class="form-control"
+                                                    name="jenis_barang"> </div>
                                         </div>
                                         <div class="mb-3 row"> <label for="harga"
-                                                class="col-form-label col-2">Stok</label>
+                                                class="col-form-label col-2">Harga</label>
                                             <div class="col-10"> <input type="number" class="form-control"
-                                                    name="stok"> </div>
+                                                    name="password"> </div>
                                         </div>
+                                        <div class="mb-3 row"> <label for="diskon"
+                                                class="col-form-label col-2">Diskon</label>
+                                            <div class="col-10"> <input type="text" class="form-control"
+                                                    name="diskon"> </div>
+                                        </div>
+                                        {{-- <div class="mb-3 row"> <label for="akses"
+                                                class="col-form-label col-2">Akses</label>
+                                            <div class="col-10"> <select name="akses" id="akses"
+                                                    class="form-control">
+                                                    <option value="admin">Admin</option>
+                                                    <option value="kasir">Kasir</option>
+                                                </select> </div>
+                                        </div> --}}
                                         <div class="mb-3"> <button class="btn btn-success" type="reset"><i
                                                     class="bi bi-x-square-fill"></i> Batal</button> <button
                                                 class="btn btn-primary" type="submit"> <i
